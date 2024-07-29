@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+function isPalindrome(str) {
+    let j = str.length - 1
+    let i = 0;
+    while ( i < str.length / 2) {
+        if (str[i] != str[j]) {
+            return false;
+            i++;
+        }
+        j--;
+    }
+    return true;
+}
+ 
+let str1 = "patil";   
+let str2 = "nitin";
+let str3 = "mom";
+ 
+console.log(isPalindrome(str1));
+console.log(isPalindrome(str2));
+console.log(isPalindrome(str3));
+
+
+
+
+
+
+</script>
+</body>
+</html> 
+
+

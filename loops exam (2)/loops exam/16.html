@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+  <script>
+  function stringInput (prompt) {
+    return readline.prompt();
+}
+
+function op() {
+    return stringInput('Please enter an operator');
+}
+
+
+function calculator() {
+    num = numArray(op());
+    performOneCalc();
+    console.log('\nThe answer is ' + answer + '.');
+}
+
+function loopCalc() {
+    let =askAgain();
+    while ( oneMore == ('yes')) 
+    {
+        askAgain()
+        if (oneMore == 'yes') {
+            calculator();
+        }
+        else if (oneMore == 'no') {
+            break;
+        }
+        else { 
+            console.log('I neeed a yes or no answer');
+            askAgain();
+        }
+    }
+}
+  </script>
+
+
+
+</body>
+</html>

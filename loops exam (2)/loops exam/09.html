@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countVowels(str) {
+  var count = 0;
+  var vowels = ['a','e', 'i', 'o', 'u'];
+
+  for (var i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i].toLowerCase())) {
+      count++;
+    }
+  }
+
+  return count;
+}
+const inputString = 'Hello, World!';
+console.log(countVowels(inputString));
+console.log
+
+
+</script>
+</body>
+</html>

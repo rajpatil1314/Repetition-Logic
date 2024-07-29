@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <label for = "">Enter money to be withdrawn</label>
+    <input type="text" id="i1">
+    <br><br>
+    <label for = "">Please collect your money</label>
+    <input type="text" id="i2">
+    <br><br>
+    <label for = "">Check Balance</label>
+    <input type="text" id="i3">
+ 
+
+    <input type="submit" onclick="check()">
+
+    <script>
+        function check()
+        {
+
+
+        var password='abc';
+          
+        var  withdrawn = document.getElementById('i1').value;
+        var  money = document.getElementById('i2').value;
+        var  Balance = document.getElementById('i3').value;
+
+        if(withdrawn != money)
+        {
+            alert("Insufficient Balance");
+            console.log('Insufficient Balance');
+            return false;
+        }
+        
+     
+        else 
+        {
+            alert("Your Money has been successfully depsited")
+            return true;
+        }
+
+        }
+      
+    </script>
+   
+
+
+</body>
+</html>
